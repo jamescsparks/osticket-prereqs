@@ -30,19 +30,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
 1. Prepare the Windows Environment
 Deploy a Windows 10 Virtual Machine on Azure (or use a local one).
 Connect to the VM via Remote Desktop.
 </p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![96F207F5-3478-4388-B54E-F4B30EACC09D_1_105_c](https://github.com/user-attachments/assets/0433227d-951e-4c72-a6e8-29ea25c9b95f)
+
+![5CB548B7-E674-4E02-89E4-769D6B930321](https://github.com/user-attachments/assets/99d3ea78-dabf-40d6-a6f5-d3b5e5d271d1)
+
 <p>
 2. Install IIS
 Open Control Panel > Programs > Turn Windows features on or off.
