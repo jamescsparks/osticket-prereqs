@@ -22,16 +22,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-  Windows VM with Internet Access (via Azure or local)
-- Item 2
-  IIS (Internet Information Services) installed and configured
-- Item 3
-- PHP 8.x installed 
-- Item 4
-- MySQL Server installed and running
-- Item 5
-osTicket Installation Files (Download from https://osticket.com/download/)
+- Item 1 - Windows VM with Internet Access (via Azure or local)
+- Item 2 - IIS (Internet Information Services) installed and configured
+- Item 3 - PHP 8.x installed 
+- Item 4 - MySQL Server installed and running
+- Item 5 - osTicket Installation Files (Download from https://osticket.com/download/)
 
 <h2>Installation Steps</h2>
 
