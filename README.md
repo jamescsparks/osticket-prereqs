@@ -34,7 +34,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1. Prepare the Windows Environment
+Deploy a Windows 10 Virtual Machine on Azure (or use a local one).
+Connect to the VM via Remote Desktop.
 </p>
 <br />
 
@@ -42,7 +44,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+2. Install IIS
+Open Control Panel > Programs > Turn Windows features on or off.
+Enable Internet Information Services and CGI under IIS.
+Restart the machine if prompted.
+3. Install PHP
+Download PHP from the official site (https://windows.php.net/download).
+Extract it to C:\PHP.
+Configure php.ini:
+Enable extensions: mysqli, pdo_mysql, gd, imap, xml, mbstring, intl
+Add C:\PHP to the system Environment Variables > Path.
+In IIS, configure a new Handler Mapping for PHP.
 </p>
 <br />
 
@@ -50,6 +62,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+4. Install MySQL Server
+Download MySQL Community Server from https://dev.mysql.com/downloads/mysql/.
+Install and configure with a root password.
+Create a new database and user for osTicket using MySQL Workbench or the MySQL shell.
+5. Download and Install osTicket
+Download the latest stable version of osTicket.
+Extract the files into C:\inetpub\wwwroot\osTicket.
+Set file permissions (ensure IIS can write to /include and /setup).
+Navigate to http://localhost/osTicket/setup in your browser.
+Follow the installation wizard:
+Enter database info, admin credentials, and system name.
+Upon completion, delete the /setup directory and set /include/ost-config.php to read-only.
 </p>
 <br />
