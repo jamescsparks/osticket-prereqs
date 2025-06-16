@@ -45,6 +45,7 @@ Connect to the VM via Remote Desktop.
 Open Control Panel > Programs > Turn Windows features on or off.
 Enable Internet Information Services and CGI under IIS.
 Restart the machine if prompted.
+<p>
 3. Install PHP
 Download PHP from the official site (https://windows.php.net/download).
 Extract it to C:\PHP.
