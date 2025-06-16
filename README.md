@@ -53,11 +53,9 @@ Enable extensions: mysqli, pdo_mysql, gd, imap, xml, mbstring, intl
 Add C:\PHP to the system Environment Variables > Path.
 In IIS, configure a new Handler Mapping for PHP.
 </p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Image](https://github.com/user-attachments/assets/648751ef-711a-42f1-9ea7-f256e18214b9)
+
 <p>
 4. Install MySQL Server
 Download MySQL Community Server from https://dev.mysql.com/downloads/mysql/.
@@ -71,5 +69,8 @@ Navigate to http://localhost/osTicket/setup in your browser.
 Follow the installation wizard:
 Enter database info, admin credentials, and system name.
 Upon completion, delete the /setup directory and set /include/ost-config.php to read-only.
+
+![0821AAFD-13B7-47BD-9E4E-A3A2C73ACE89](https://github.com/user-attachments/assets/ad07bc83-cd1c-450f-94f7-35cf89080221)
+
 </p>
 <br />
